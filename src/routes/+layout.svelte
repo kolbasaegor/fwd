@@ -1,5 +1,4 @@
 <script>
-	export const prerender = true;
 	import {base} from "$app/paths";
 	import './styles.css';
 </script>
