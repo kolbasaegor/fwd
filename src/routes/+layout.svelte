@@ -1,10 +1,15 @@
 <script>
-	import Header from './Header.svelte';
+	import {base} from "$app/paths";
 	import './styles.css';
 </script>
 
 <div class="app">
-	<Header />
+	<header>
+		<nav>
+			<a href="{base}/">About</a>
+			<a href="{base}/xkcd/">XKCD</a>
+		</nav>
+	</header>
 
 	<main>
 		<slot />
@@ -49,5 +54,34 @@
 		footer {
 			padding: 12px 0;
 		}
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	nav a {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 1rem;
+		color: white;
+		font-weight: 700;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		transition: color 0.2s linear;
+	}
+
+	a:hover {
+		background-color: rgb(147, 0, 180);
 	}
 </style>
