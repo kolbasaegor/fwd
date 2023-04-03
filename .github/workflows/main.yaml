@@ -1,5 +1,12 @@
 name: Build and Deploy
 
+- env: NAME=”Format with prettier”
+  script:
+   - yarn prettier-ci
+- env: NAME=”Lint”
+  script:
+   - yarn lint
+
 on:
   push:
     branches:
