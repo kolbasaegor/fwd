@@ -1,7 +1,3 @@
-<script>
-	import { page } from '$app/stores';
-</script>
-
 <header>
 	<nav>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
