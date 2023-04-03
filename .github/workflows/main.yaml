@@ -1,12 +1,5 @@
 name: Build and Deploy
 
-- env: NAME=”Format with prettier”
-  script:
-   - yarn prettier-ci
-- env: NAME=”Lint”
-  script:
-   - yarn lint
-
 on:
   push:
     branches:
@@ -28,6 +21,8 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm ci
+      - run: npm run lint
+      - run: npm run prettier
       - name: Build website
         run: npm run build
       - name: Deploy to GitHub Page
