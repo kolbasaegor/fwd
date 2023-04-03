@@ -1,6 +1,7 @@
 <svelte:head>
 	<title>XKCD</title>
 	<meta name="description" content="About this app" />
+    <link rel="icon" type="image/x-icon" href="./lib/images/us_flag_icon_251529.ico">
 </svelte:head>
 
 <script lang="ts">
