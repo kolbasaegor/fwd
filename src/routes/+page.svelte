@@ -1,7 +1,6 @@
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="Svelte demo app" />
-    <link rel="icon" type="image/x-icon" href="./lib/images/de_flag_icon_251670.ico">
 </svelte:head>
 
 <div id="bio">
