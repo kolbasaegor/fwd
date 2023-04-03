@@ -1,0 +1,10 @@
+export const arrowParens = 'avoid';
+export const singleQuote = true;
+export const printWidth = 90;
+export const plugins = ['prettier-plugin-svelte'];
+export const semi = false;
+export const svelteSortOrder = 'options-styles-scripts-markup';
+export const svelteStrictMode = false;
+export const svelteBracketNewLine = true;
+export const svelteIndentScriptAndStyle = true;
+export const trailingComma = 'none';
